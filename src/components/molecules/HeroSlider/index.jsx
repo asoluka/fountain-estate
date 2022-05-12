@@ -1,7 +1,9 @@
 import { useEffect, useState } from "react";
 import styled from "styled-components";
+import { screen } from "../../../theme";
 import { Flex, Section, Text } from "../../atoms";
 import { ActionButtons, MainNav } from "../../organisms";
+import { CallButton } from "../CallButton";
 
 const HeroWrapper = styled(Flex)`
   min-height: inherit;
@@ -15,6 +17,10 @@ const SliderImage = styled.div`
   background-size: cover;
   width: 45%;
   transition: all 1s;
+
+  @media only screen and (${screen.lg}) {
+    width: 100%;
+  }
 `;
 
 const SliderContent = styled.div`
@@ -23,6 +29,10 @@ const SliderContent = styled.div`
   justify-content: space-between;
   padding: 20px 100px;
   width: 55%;
+
+  @media only screen and (${screen.lg}) {
+    display: none;
+  }
 `;
 
 const SliderText = styled(Text)`
@@ -33,6 +43,11 @@ const SliderButtonWrapper = styled.div`
   position: absolute;
   bottom: 20px;
   left: -50px;
+
+  @media only screen and (${screen.lg}) {
+    bottom: 0;
+    left: 0;
+  }
 `;
 
 const SliderButton = styled.button`
@@ -81,6 +96,7 @@ export const HeroSlider = ({ data }) => {
         <div></div>
       </SliderContent>
       <SliderImage backgroundImage={imgUrl}>
+        <CallButton position="absolute" top="35px" right="20px" />
         <ActionButtons />
         <SliderButtonWrapper>
           <SliderButton onClick={prevSlide}>&#129168;</SliderButton>

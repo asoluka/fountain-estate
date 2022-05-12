@@ -1,24 +1,31 @@
 import styled from "styled-components";
 import { Icon } from "../../atoms/Icon";
+import { screen } from "../../../theme";
 
 const Wrapper = styled.div`
   position: absolute;
   width: fit-content;
-  right: -10px;
-  bottom: 50%;
-  transform: translate(-50%, 50%);
+  right: 20px;
+  bottom: 20px;
+  /* transform: translate(-50%, 50%); */
   background: rgba(0, 0, 0, 0.5);
   padding: 10px;
   border-radius: 50px;
+
+  @media only screen and (${screen.lg}) {
+    bottom: 0;
+    right: 0;
+    border-radius: 50px 50px 0;
+  }
 `;
 
 const ButtonWrapper = styled.div`
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
   border-radius: 50%;
   background-color: "transparent";
   border: 2px solid #fcfdff;
-  padding: 10px;
+  padding: 8px;
   cursor: pointer;
   display: flex;
   justify-content: center;
