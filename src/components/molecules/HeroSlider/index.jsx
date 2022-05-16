@@ -3,6 +3,8 @@ import styled from "styled-components";
 import { screen } from "../../../theme";
 import { Flex, Section, Text } from "../../atoms";
 import { ActionButtons, MainNav } from "../../organisms";
+import CallFloatingAction from "../CallFloatingAction";
+import { InstantMessageFloatingAction } from "../InstandMessageFloatingAction";
 // import { CallButton } from "../CallButton";
 
 const HeroWrapper = styled(Flex)`
@@ -23,7 +25,7 @@ const SliderImage = styled.div`
   transition: all 1s;
 
   @media only screen and (${screen.lg}) {
-    min-height: 60vh;
+    min-height: 100vh;
     width: 100%;
   }
 `;
@@ -36,8 +38,16 @@ const SliderContent = styled.div`
   width: 55%;
 
   @media only screen and (${screen.lg}) {
+    color: white;
+    background: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
     padding: 20px 10px;
-    min-height: 40vh;
+    z-index: 999999;
+    // min-height: 40vh;
     width: 100%;
   }
 `;
@@ -52,8 +62,7 @@ const SliderButtonWrapper = styled.div`
   left: -50px;
 
   @media only screen and (${screen.lg}) {
-    bottom: 0;
-    left: 0;
+    display: none;
   }
 `;
 
@@ -93,10 +102,10 @@ export const HeroSlider = ({ data }) => {
     <div>
       <HeroWrapper>
         <SliderContent>
-          <MainNav />
-          <Section border="1p solid black" width="80%">
+          <MainNav background="transparent" />
+          <Section border="1p solid black" width="80%" margin="-40px 0 0 0">
             <SliderText type="p">We exist to keep:</SliderText>
-            <p className="mt-2 text-3xl md:text-5xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl mb-8">
+            <p className="mt-2 text-4xl leading-snug md:text-5xl leading-8 font-extrabold tracking-tight sm:text-4xl mb-8">
               {title}
             </p>
             <SliderText type="p">{description}</SliderText>
@@ -112,6 +121,8 @@ export const HeroSlider = ({ data }) => {
           </SliderButtonWrapper>
         </SliderImage>
       </HeroWrapper>
+      <CallFloatingAction />
+      <InstantMessageFloatingAction />
     </div>
   );
 };

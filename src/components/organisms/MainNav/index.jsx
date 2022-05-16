@@ -26,14 +26,14 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
-export const MainNav = () => {
+export const MainNav = ({ background }) => {
   return (
-    <Popover className="relative bg-white">
+    <Popover className={`relative bg-${background || "white"}`}>
       <div className="max-w-6xl mx-auto px-2 sm:px-2">
         <div className="flex justify-between items-center py-2 md:justify-start md:space-x-10">
           <div className="flex justify-start lg:w-0 lg:flex-1">
             <Link to="/">
-              <span className="sr-only">Fountain Heavens</span>
+              <span className="sr-only">Fountain Havens</span>
               <img
                 className="h-auto w-16"
                 src="../../../assets/imgs/logo.png"
@@ -92,10 +92,10 @@ export const MainNav = () => {
                               to={item.to}
                               className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50"
                             >
-                              <item.icon
+                              {/* <item.icon
                                 className="flex-shrink-0 h-6 w-6 text-indigo-600"
                                 aria-hidden="true"
-                              />
+                              /> */}
                               <div className="ml-4">
                                 <p className="text-base font-medium text-gray-900">
                                   {item.name}
@@ -113,11 +113,11 @@ export const MainNav = () => {
           </Popover.Group>
           <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
             <a
-              href="tel: +2348167231071"
+              href="tel: +2348143019660"
               className="text-base ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium hover:text-white text-white bg-indigo-600 hover:bg-indigo-700"
             >
-              <Icon type="phone" className="w-4 mr-2" fill="white" /> 0816 723
-              1071
+              <Icon type="phone" className="w-4 mr-2" fill="white" />{" "}
+              08143019660
             </a>
           </div>
         </div>

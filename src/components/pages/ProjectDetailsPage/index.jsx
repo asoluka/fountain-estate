@@ -210,7 +210,7 @@ export const ProjectDetailsPage = () => {
           style={{ paddingTop: "42.857143%" }}
         >
           <iframe
-            title="heavens"
+            title="havens"
             class="embed-responsive-item absolute top-0 right-0 bottom-0 left-0 w-full h-full"
             src="https://www.youtube.com/embed/vlDzYIIOYmM?enablejsapi=1&amp;origin=https%3A%2F%2Fmdbootstrap.com"
             allowfullscreen=""

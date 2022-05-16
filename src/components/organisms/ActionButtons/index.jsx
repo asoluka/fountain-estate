@@ -8,15 +8,13 @@ const Wrapper = styled.div`
   right: -10px;
   bottom: 50%;
   transform: translate(-50%, 50%);
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.6);
   padding: 10px;
   border-radius: 50px;
+  z-index: 99999999999;
 
   @media only screen and (${screen.lg}) {
-    bottom: 0;
-    right: 0;
-    transform: translate(0, 0);
-    border-radius: 50px 50px 0;
+    right: -20px;
   }
 `;
 
@@ -25,7 +23,7 @@ const ButtonWrapper = styled.div`
   height: 35px;
   border-radius: 50%;
   background-color: "transparent";
-  border: 2px solid #fcfdff;
+  border: 2px solid #ffffff;
   padding: 8px;
   cursor: pointer;
   display: flex;
@@ -43,6 +41,10 @@ const ButtonWrapper = styled.div`
     background-color: ${({ backgroundColor }) =>
       backgroundColor || "transparent"};
   }
+
+  @media only screen and (${screen.lg}) {
+    border: 2px solid #0000ff;
+  }
 `;
 
 export const ActionButtons = () => {
@@ -52,8 +54,8 @@ export const ActionButtons = () => {
         <Icon type="instagram" fill="white" />
       </ButtonWrapper>
 
-      <ButtonWrapper backgroundColor="#25D366">
-        <Icon type="whatsapp" fill="white" />
+      <ButtonWrapper backgroundColor="#FD1D1D">
+        <Icon type="youtube" fill="white" />
       </ButtonWrapper>
 
       <ButtonWrapper backgroundColor="#4267B2">
