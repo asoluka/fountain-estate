@@ -3,10 +3,14 @@ import styled from "styled-components";
 import { screen } from "../../../theme";
 import { Flex, Section, Text } from "../../atoms";
 import { ActionButtons, MainNav } from "../../organisms";
-import { CallButton } from "../CallButton";
+// import { CallButton } from "../CallButton";
 
 const HeroWrapper = styled(Flex)`
-  min-height: inherit;
+  min-height: 100vh;
+
+  @media only screen and (${screen.lg}) {
+    flex-direction: column;
+  }
 `;
 
 const SliderImage = styled.div`
@@ -19,6 +23,7 @@ const SliderImage = styled.div`
   transition: all 1s;
 
   @media only screen and (${screen.lg}) {
+    min-height: 60vh;
     width: 100%;
   }
 `;
@@ -27,11 +32,13 @@ const SliderContent = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 20px 100px;
+  padding: 20px 50px;
   width: 55%;
 
   @media only screen and (${screen.lg}) {
-    display: none;
+    padding: 20px 10px;
+    min-height: 40vh;
+    width: 100%;
   }
 `;
 
@@ -83,26 +90,28 @@ export const HeroSlider = ({ data }) => {
   };
 
   return (
-    <HeroWrapper>
-      <SliderContent>
-        <MainNav />
-        <Section border="1p solid black" width="80%">
-          <SliderText type="p">We exist to keep:</SliderText>
-          <SliderText type="h1" fontSize="3.5rem" margin="0 0 50px 0">
-            {title}
-          </SliderText>
-          <SliderText type="p">{description}</SliderText>
-        </Section>
-        <div></div>
-      </SliderContent>
-      <SliderImage backgroundImage={imgUrl}>
-        <CallButton position="absolute" top="35px" right="20px" />
-        <ActionButtons />
-        <SliderButtonWrapper>
-          <SliderButton onClick={prevSlide}>&#129168;</SliderButton>
-          <SliderButton onClick={nextSlide}>&#129170;</SliderButton>
-        </SliderButtonWrapper>
-      </SliderImage>
-    </HeroWrapper>
+    <div>
+      <HeroWrapper>
+        <SliderContent>
+          <MainNav />
+          <Section border="1p solid black" width="80%">
+            <SliderText type="p">We exist to keep:</SliderText>
+            <p className="mt-2 text-3xl md:text-5xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl mb-8">
+              {title}
+            </p>
+            <SliderText type="p">{description}</SliderText>
+          </Section>
+          <div></div>
+        </SliderContent>
+        <SliderImage backgroundImage={imgUrl}>
+          {/* <CallButton position="absolute" top="35px" right="20px" /> */}
+          <ActionButtons />
+          <SliderButtonWrapper>
+            <SliderButton onClick={prevSlide}>&#129168;</SliderButton>
+            <SliderButton onClick={nextSlide}>&#129170;</SliderButton>
+          </SliderButtonWrapper>
+        </SliderImage>
+      </HeroWrapper>
+    </div>
   );
 };

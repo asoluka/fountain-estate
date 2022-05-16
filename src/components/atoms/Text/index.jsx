@@ -78,7 +78,7 @@ export const Text = ({
     return (
       <StyledParagraph
         color={color}
-        fontSize={fontSize}
+        fontSize={fontSize || "0.9rem"}
         cursor={cursor}
         width={width}
         height={height}

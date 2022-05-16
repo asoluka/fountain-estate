@@ -5,9 +5,9 @@ import { screen } from "../../../theme";
 const Wrapper = styled.div`
   position: absolute;
   width: fit-content;
-  right: 20px;
-  bottom: 20px;
-  /* transform: translate(-50%, 50%); */
+  right: -10px;
+  bottom: 50%;
+  transform: translate(-50%, 50%);
   background: rgba(0, 0, 0, 0.5);
   padding: 10px;
   border-radius: 50px;
@@ -15,6 +15,7 @@ const Wrapper = styled.div`
   @media only screen and (${screen.lg}) {
     bottom: 0;
     right: 0;
+    transform: translate(0, 0);
     border-radius: 50px 50px 0;
   }
 `;

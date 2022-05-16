@@ -1,0 +1,85 @@
+input:focus-visible,
+input:focus,
+input:active {
+  border-color: unset !important;
+}
+
+a:hover {
+  color: unset !important;
+}
+
+.ant-tabs-tab {
+  padding: 12px 20px !important;
+}
+
+.ant-tabs-tab + .ant-tabs-tab {
+  margin-left: 0 !important;
+}
+
+.ant-tabs-tab .ant-tabs-tab-btn {
+  color: black;
+  font-weight: bold;
+  /* font-weight: 500; */
+}
+
+.ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: #03033b;
+  font-weight: bold;
+  /* font-weight: 500; */
+}
+
+.ant-tabs-ink-bar {
+  background: #757575;
+}
+
+.ant-tabs-tab:hover {
+  color: #757575;
+}
+
+.ant-tabs-tab-btn:focus,
+.ant-tabs-tab-remove:focus,
+.ant-tabs-tab-btn:active,
+.ant-tabs-tab-remove:active {
+  color: #757575;
+}
+
+#components-dropdown-demo-arrow .ant-btn {
+  margin-right: 8px;
+  margin-bottom: 8px;
+}
+
+.ant-row-rtl #components-dropdown-demo-arrow .ant-btn {
+  margin-right: 0;
+  margin-bottom: 8px;
+  margin-left: 8px;
+}
+
+.ant-dropdown-menu {
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+.ant-dropdown-menu-item {
+  padding: 0px 10px;
+}
+
+.ant-switch-checked {
+  background-color: #1b76af !important;
+}
+
+.ant-tooltip-inner {
+  background-color: #1b76af !important;
+}
+
+.ant-tooltip-arrow-content {
+  background-color: #1b76af !important;
+  --antd-arrow-background-color: #1b76af !important;
+}
+
+.ant-tabs-top > .ant-tabs-nav::before {
+  border-bottom: 0 !important;
+}
+
+.ant-drawer-body {
+  padding: 0 !important;
+}

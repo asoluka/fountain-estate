@@ -4,8 +4,8 @@ import { HeroSlider } from "../../molecules";
 
 const Main = styled.div`
   min-height: 100vh;
-  background-color: #f2f6ff;
-  /* background-color: #fcfdff; */
+  background-color: #ffffff;
+  /* background-color: #f2f6ff;  */
   /* color: #484848; */
 `;
 
