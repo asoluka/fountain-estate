@@ -37,7 +37,7 @@ export const AboutPage = () => {
       <div className="py-12 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="lg:text-center">
-            <h2 className="text-base text-indigo-600 font-semibold tracking-wide uppercase">
+            <h2 className="text-base text-blue-900 font-semibold tracking-wide uppercase">
               About
             </h2>
             <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
@@ -56,9 +56,41 @@ export const AboutPage = () => {
       </div>
 
       <div>
+        <div className="max-w-7xl mx-auto mb-20 text-gray-700">
+          <div className="grid grid-cols-1 md:grid-cols-7 gap-8">
+            <div className="col-start-2 col-end-4 shadow-2xl">
+              <img
+                className="h-full"
+                src="../../../assets/imgs/street_view_2.jpg"
+                alt="Construction"
+              />
+            </div>
+            <div className="col-start-4 col-end-7">
+              <p className="pb-6">
+                At the Fountain Havens great care is placed on the longevity of
+                our construction which we ensure with the use of quality
+                materials, skilled artisans, as well as cutting edge techniques
+                in achieving unparalleled detail and finesse in our Finish!
+              </p>
+
+              <p>
+                Our projects have a reputation for setting standards for success
+                in their respective markets and product types. Over and above
+                financial returns, they improve cities and pioneer new
+                sustainable practices. Combining insights from local teams,
+                decades of experience and a commitment to long-term value
+                creation, we craft sophisticated structures designed by the best
+                of industry professionals.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
         <section class="max-w-7xl mx-auto mb-20 text-gray-700">
           <div class="text-center md:max-w-xl lg:max-w-3xl mx-auto">
-            <h2 className="text-base text-indigo-600 font-semibold tracking-wide uppercase">
+            <h2 className="text-base text-blue-900 font-semibold tracking-wide uppercase">
               Meet
             </h2>
             <h3 class="text-3xl font-bold mb-6 text-gray-800">Our Team</h3>
@@ -102,7 +134,7 @@ export const AboutPage = () => {
       <div>
         <section class="max-w-7xl mx-auto mb-20 text-gray-700">
           <div class="text-center md:max-w-xl lg:max-w-3xl mx-auto">
-            <h2 className="text-base text-indigo-600 font-semibold tracking-wide uppercase">
+            <h2 className="text-base text-blue-900 font-semibold tracking-wide uppercase">
               Hear
             </h2>
             <h3 class="text-3xl font-bold mb-6 text-gray-800">

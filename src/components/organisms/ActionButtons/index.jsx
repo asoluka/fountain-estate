@@ -43,7 +43,7 @@ const ButtonWrapper = styled.div`
   }
 
   @media only screen and (${screen.lg}) {
-    border: 2px solid #0000ff;
+    border: 2px solid #1e3a8a;
   }
 `;
 

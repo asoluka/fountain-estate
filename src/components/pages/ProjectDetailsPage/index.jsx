@@ -227,14 +227,14 @@ export const ProjectDetailsPage = () => {
         <div className="py-12 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center">
-              <h2 className="text-base text-indigo-600 font-semibold tracking-wide uppercase">
+              <h2 className="text-base text-blue-900 font-semibold tracking-wide uppercase">
                 Project Details
               </h2>
               <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
                 Integrity Towers
               </p>
               <p className="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
-                Lekki, Lagos
+                6 C & I Leasing Dr, Lekki Phase I, Lagos.
               </p>
             </div>
           </div>
@@ -277,7 +277,7 @@ export const ProjectDetailsPage = () => {
           <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between">
             <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
               <span className="block">Ready to invest?</span>
-              <span className="block text-indigo-600">
+              <span className="block text-blue-900">
                 Contact Us or Schedule an Inspection.
               </span>
             </h2>
@@ -285,7 +285,7 @@ export const ProjectDetailsPage = () => {
               <div className="inline-flex rounded-md shadow">
                 <Link
                   to="#"
-                  className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700"
+                  className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-900 hover:bg-blue-700"
                 >
                   Instant Call
                 </Link>
@@ -293,7 +293,7 @@ export const ProjectDetailsPage = () => {
               <div className="ml-3 inline-flex rounded-md shadow">
                 <Link
                   to="#"
-                  className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-indigo-600 bg-white hover:bg-indigo-50"
+                  className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-blue-900 bg-white hover:bg-blue-50"
                 >
                   Schedule Inspection
                 </Link>
