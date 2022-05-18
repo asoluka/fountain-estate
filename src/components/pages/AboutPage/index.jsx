@@ -10,7 +10,7 @@ const PaddedContainer = styled.div`
   padding: 0 80px;
 
   @media only screen and (${screen.lg}) {
-    padding: 0 50px;
+    padding: 0 10px;
   }
 `;
 
@@ -87,14 +87,14 @@ export const AboutPage = () => {
         </div>
       </div>
 
-      <div>
-        <section class="max-w-7xl mx-auto mb-20 text-gray-700">
-          <div class="text-center md:max-w-xl lg:max-w-3xl mx-auto">
+      {/* <div className="px-4">
+        <section className="max-w-7xl mx-auto mb-20 text-gray-700">
+          <div className="text-center md:max-w-xl lg:max-w-3xl mx-auto">
             <h2 className="text-base text-blue-900 font-semibold tracking-wide uppercase">
               Meet
             </h2>
-            <h3 class="text-3xl font-bold mb-6 text-gray-800">Our Team</h3>
-            <p class="mb-6 pb-2 md:mb-12 md:pb-0">
+            <h3 className="text-3xl font-bold mb-6 text-gray-800">Our Team</h3>
+            <p className="mb-6 pb-2 md:mb-12 md:pb-0">
               We believe in what people believe of homes they want to own: A
               place of abode where connectedness and rapport with family are
               guaranteed through harmony and the related function of its spaces
@@ -104,24 +104,24 @@ export const AboutPage = () => {
             </p>
           </div>
 
-          <div class="grid md:grid-cols-3 gap-6 text-center">
+          <div className="grid md:grid-cols-3 gap-6 text-center">
             {[1, 2, 3].map((elem) => {
               return (
                 <div>
-                  <div class="block rounded-lg shadow-lg bg-white">
+                  <div className="block rounded-lg shadow-lg bg-white">
                     <div
-                      class="overflow-hidden rounded-t-lg h-28"
+                      className="overflow-hidden rounded-t-lg h-28"
                       style={{ backgroundColor: "#030f51" }}
                     ></div>
-                    <div class="w-24 -mt-12 overflow-hidden border border-2 border-white rounded-full mx-auto bg-white">
+                    <div className="w-24 -mt-12 overflow-hidden border border-2 border-white rounded-full mx-auto bg-white">
                       <img
                         src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(1).webp"
                         alt=""
                       />
                     </div>
-                    <div class="p-6">
-                      <h4 class="text-2xl font-semibold mb-4">John Doe</h4>
-                      <p class="mt-4">Head of Sales</p>
+                    <div className="p-6">
+                      <h4 className="text-2xl font-semibold mb-4">John Doe</h4>
+                      <p className="mt-4">Head of Sales</p>
                     </div>
                   </div>
                 </div>
@@ -129,37 +129,35 @@ export const AboutPage = () => {
             })}
           </div>
         </section>
-      </div>
+      </div> */}
 
-      <div>
-        <section class="max-w-7xl mx-auto mb-20 text-gray-700">
-          <div class="text-center md:max-w-xl lg:max-w-3xl mx-auto">
+      <div className="px-4">
+        <section className="max-w-7xl mx-auto mb-20 text-gray-700">
+          <div className="text-center md:max-w-xl lg:max-w-3xl mx-auto">
             <h2 className="text-base text-blue-900 font-semibold tracking-wide uppercase">
               Hear
             </h2>
-            <h3 class="text-3xl font-bold mb-6 text-gray-800">
+            <h3 className="text-3xl font-bold mb-6 text-gray-800">
               What our Clients have to Say
             </h3>
-            <p class="mb-6 pb-2 md:mb-12 md:pb-0">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit,
-              error amet numquam iure provident voluptate esse quasi, veritatis
-              totam voluptas nostrum quisquam eum porro a pariatur veniam.
+            <p className="mb-6 pb-2 md:mb-12 md:pb-0">
+              See messages from our satisfied clients.
             </p>
           </div>
 
-          <div class="grid md:grid-cols-3 gap-6 text-center">
+          <div className="grid md:grid-cols-3 gap-6 text-center">
             {[1, 2, 3].map((elem) => {
               return (
                 <div>
-                  <div class="block rounded-lg shadow-lg bg-white">
-                    <div class="p-6">
-                      <p class="mt-4">
+                  <div className="block rounded-lg shadow-lg bg-white">
+                    <div className="p-6">
+                      <p className="mt-4">
                         <svg
                           aria-hidden="true"
                           focusable="false"
                           data-prefix="fas"
                           data-icon="quote-left"
-                          class="w-6 pr-2 inline-block"
+                          className="w-6 pr-2 inline-block"
                           role="img"
                           xmlns="http://www.w3.org/2000/svg"
                           viewBox="0 0 512 512"
@@ -172,7 +170,7 @@ export const AboutPage = () => {
                         Lorem ipsum dolor sit amet eos adipisci, consectetur
                         adipisicing elit.
                       </p>
-                      <h5 class="text-2xl mb-4 pt-6">John Doe</h5>
+                      <h5 className="text-2xl mb-4 pt-6">John Doe</h5>
                     </div>
                   </div>
                 </div>

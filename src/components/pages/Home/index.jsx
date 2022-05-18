@@ -1,6 +1,5 @@
 import styled from "styled-components";
-import { HeroSlider } from "../../molecules";
-// import { HeroSlider } from "./components";
+import { HeroSlider } from "../../organisms";
 
 const Main = styled.div`
   min-height: 100vh;

@@ -2,9 +2,7 @@ import { useEffect, useState } from "react";
 import styled from "styled-components";
 import { screen } from "../../../theme";
 import { Flex, Section, Text } from "../../atoms";
-import { ActionButtons, MainNav } from "../../organisms";
-import CallFloatingAction from "../CallFloatingAction";
-import { InstantMessageFloatingAction } from "../InstandMessageFloatingAction";
+import { ActionButtons, MainNav } from "..";
 // import { CallButton } from "../CallButton";
 
 const HeroWrapper = styled(Flex)`
@@ -121,8 +119,6 @@ export const HeroSlider = ({ data }) => {
           </SliderButtonWrapper>
         </SliderImage>
       </HeroWrapper>
-      <CallFloatingAction />
-      <InstantMessageFloatingAction />
     </div>
   );
 };

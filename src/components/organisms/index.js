@@ -6,3 +6,4 @@ export * from "./Accordion";
 export * from "./DataTable";
 export * from "./Map";
 export * from "./ProjectGallery";
+export * from "./HeroSlider";

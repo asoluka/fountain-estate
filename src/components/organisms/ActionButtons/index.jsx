@@ -51,19 +51,43 @@ export const ActionButtons = () => {
   return (
     <Wrapper>
       <ButtonWrapper backgroundColor="#FD1D1D">
-        <Icon type="instagram" fill="white" />
+        <a
+          href="https://www.instagram.com/fountainhavens/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <Icon type="instagram" fill="white" />
+        </a>
       </ButtonWrapper>
 
       <ButtonWrapper backgroundColor="#FD1D1D">
-        <Icon type="youtube" fill="white" />
+        <a
+          href="https://www.youtube.com/channel/UCoUI6A38tQ4owqFgJY2O75g"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <Icon type="youtube" fill="white" />
+        </a>
       </ButtonWrapper>
 
       <ButtonWrapper backgroundColor="#4267B2">
-        <Icon type="facebook" fill="white" />
+        <a
+          href="https://web.facebook.com/profile.php?id=100081371409011"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <Icon type="facebook" fill="white" />
+        </a>
       </ButtonWrapper>
 
-      <ButtonWrapper backgroundColor="#1DA1F2">
-        <Icon type="twitter" fill="white" />
+      <ButtonWrapper backgroundColor="#0072B1">
+        <a
+          href="https://www.linkedin.com/in/fountain-havens-5767ab227"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <Icon type="linkedin" fill="white" />
+        </a>
       </ButtonWrapper>
     </Wrapper>
   );

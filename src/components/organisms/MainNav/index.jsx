@@ -29,7 +29,7 @@ function classNames(...classes) {
 export const MainNav = ({ background }) => {
   return (
     <Popover className={`relative bg-${background || "white"}`}>
-      <div className="max-w-6xl mx-auto px-2 sm:px-2">
+      <div className="max-w-7xl mx-auto px-2 sm:px-2">
         <div className="flex justify-between items-center py-2 md:justify-start md:space-x-10">
           <div className="flex justify-start lg:w-0 lg:flex-1">
             <Link to="/">
@@ -53,6 +53,13 @@ export const MainNav = ({ background }) => {
               className="text-base font-medium text-gray-500 hover:text-gray-900"
             >
               About Us
+            </Link>
+
+            <Link
+              to="/schedule-inspection"
+              className="text-base font-medium text-gray-500 hover:text-gray-900"
+            >
+              Schedule Inspection
             </Link>
 
             <Popover className="relative">
@@ -154,12 +161,21 @@ export const MainNav = ({ background }) => {
                 </div>
               </div>
               <div className="mt-6">
-                <div className="mb-2">
+                <div className="mb-4">
                   <Link
                     to="/about"
                     className="text-base font-medium text-gray-500 hover:text-gray-900"
                   >
                     About Us
+                  </Link>
+                </div>
+
+                <div className="mb-4">
+                  <Link
+                    to="/schedule-inspection"
+                    className="text-base font-medium text-gray-500 hover:text-gray-900"
+                  >
+                    Schedule Inspection
                   </Link>
                 </div>
 

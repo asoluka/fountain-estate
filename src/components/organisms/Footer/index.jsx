@@ -1,22 +1,26 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { Icon } from "../../atoms";
 
 const Footer = () => {
   return (
-    // <footer class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 bg-white sm:p-6 dark:bg-gray-800">
-    <footer class="text-center lg:text-left bg-gray-100 text-gray-600">
-      <div class="max-w-7xl mx-auto flex justify-center items-center lg:justify-between p-6 border-b border-gray-300">
-        <div class="mr-12 hidden lg:block">
+    // <footer className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 bg-white sm:p-6 dark:bg-gray-800">
+    <footer className="text-center lg:text-left bg-gray-100 text-gray-600">
+      <div className="max-w-7xl mx-auto flex justify-center items-center lg:justify-between p-6 border-b border-gray-300">
+        <div className="mr-12 hidden lg:block">
           <span>Get connected with us on social networks:</span>
         </div>
-        <div class="flex justify-center">
-          <a href="#!" class="mr-6 text-gray-600">
+        <div className="flex justify-center">
+          <a
+            href="https://web.facebook.com/profile.php?id=100081371409011"
+            className="mr-6 text-gray-600"
+          >
             <svg
               aria-hidden="true"
               focusable="false"
               data-prefix="fab"
               data-icon="facebook-f"
-              class="w-2.5"
+              className="w-2.5"
               role="img"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 320 512"
@@ -27,30 +31,22 @@ const Footer = () => {
               ></path>
             </svg>
           </a>
-          <a href="#!" class="mr-6 text-gray-600">
-            <svg
-              aria-hidden="true"
-              focusable="false"
-              data-prefix="fab"
-              data-icon="twitter"
-              class="w-4"
-              role="img"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 512 512"
-            >
-              <path
-                fill="currentColor"
-                d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
-              ></path>
-            </svg>
+          <a
+            href="https://www.youtube.com/channel/UCoUI6A38tQ4owqFgJY2O75g"
+            className="mr-6 text-gray-600"
+          >
+            <Icon className="w-4" type="youtube" fill="currentColor" />
           </a>
-          <a href="#!" class="mr-6 text-gray-600">
+          <a
+            href="https://www.instagram.com/fountainhavens/"
+            className="mr-6 text-gray-600"
+          >
             <svg
               aria-hidden="true"
               focusable="false"
               data-prefix="fab"
               data-icon="instagram"
-              class="w-3.5"
+              className="w-3.5"
               role="img"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 448 512"
@@ -61,13 +57,16 @@ const Footer = () => {
               ></path>
             </svg>
           </a>
-          <a href="#!" class="mr-6 text-gray-600">
+          <a
+            href="https://www.linkedin.com/in/fountain-havens-5767ab227"
+            className="mr-6 text-gray-600"
+          >
             <svg
               aria-hidden="true"
               focusable="false"
               data-prefix="fab"
               data-icon="linkedin-in"
-              class="w-3.5"
+              className="w-3.5"
               role="img"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 448 512"
@@ -80,11 +79,11 @@ const Footer = () => {
           </a>
         </div>
       </div>
-      <div class="max-w-7xl mx-auto py-10 text-center md:text-left">
-        <div class="grid grid-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          <div class="">
+      <div className="max-w-7xl mx-auto py-10 text-center md:text-left">
+        <div className="grid grid-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="">
             <h6
-              class="
+              className="
             uppercase
             font-semibold
             mb-4
@@ -99,7 +98,7 @@ const Footer = () => {
                 focusable="false"
                 data-prefix="fas"
                 data-icon="cubes"
-                class="w-4 mr-3"
+                className="w-4 mr-3"
                 role="img"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 512 512"
@@ -111,49 +110,49 @@ const Footer = () => {
               </svg>
               Fountain Havens
             </h6>
-            <p>
+            <p className="px-4">
               At the Fountain Havens great care is placed on the longevity of
               our construction which we ensure with the use of quality
               materials, skilled artisans, as well as cutting edge techniques in
               achieving unparalleled detail and finesse in our Finish!
             </p>
           </div>
-          <div class="">
-            <h6 class="uppercase font-semibold mb-4 flex justify-center md:justify-start">
+          <div className="">
+            <h6 className="uppercase font-semibold mb-4 flex justify-center md:justify-start">
               Projects
             </h6>
-            <p class="mb-4">
-              <a href="#!" class="text-gray-600">
+            <p className="mb-4">
+              <a href="#!" className="text-gray-600">
                 Integrity Towers
               </a>
             </p>
           </div>
-          <div class="">
-            <h6 class="uppercase font-semibold mb-4 flex justify-center md:justify-start">
+          <div className="">
+            <h6 className="uppercase font-semibold mb-4 flex justify-center md:justify-start">
               Useful links
             </h6>
-            <p class="mb-4">
-              <a href="#!" class="text-gray-600">
+            <p className="mb-4">
+              <a href="/about" className="text-gray-600">
                 About Us
               </a>
             </p>
-            <p class="mb-4">
-              <a href="#!" class="text-gray-600">
-                Partnerships
+            <p className="mb-4">
+              <a href="/schedule-inspection" className="text-gray-600">
+                Schedule Inspection
               </a>
             </p>
           </div>
-          <div class="">
-            <h6 class="uppercase font-semibold mb-4 flex justify-center md:justify-start">
+          <div className="">
+            <h6 className="uppercase font-semibold mb-4 flex justify-center md:justify-start">
               Contact
             </h6>
-            <p class="flex items-center justify-center md:justify-start mb-4">
+            <p className="flex items-center justify-center md:justify-start mb-4">
               <svg
                 aria-hidden="true"
                 focusable="false"
                 data-prefix="fas"
                 data-icon="home"
-                class="w-4 mr-4"
+                className="w-4 mr-4"
                 role="img"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 576 512"
@@ -163,15 +162,15 @@ const Footer = () => {
                   d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0zM571.6 251.47L488 182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93z"
                 ></path>
               </svg>
-              6 C & I Leasing Dr, Lekki Phase I, Lagos.
+              33 Adebisi Ogunniyi Crescent, Lekki, Lagos.
             </p>
-            <p class="flex items-center justify-center md:justify-start mb-4">
+            <p className="flex items-center justify-center md:justify-start mb-4">
               <svg
                 aria-hidden="true"
                 focusable="false"
                 data-prefix="fas"
                 data-icon="envelope"
-                class="w-4 mr-4"
+                className="w-4 mr-4"
                 role="img"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 512 512"
@@ -183,13 +182,13 @@ const Footer = () => {
               </svg>
               info@fountainhavens.com
             </p>
-            <p class="flex items-center justify-center md:justify-start mb-4">
+            <p className="flex items-center justify-center md:justify-start mb-4">
               <svg
                 aria-hidden="true"
                 focusable="false"
                 data-prefix="fas"
                 data-icon="phone"
-                class="w-4 mr-4"
+                className="w-4 mr-4"
                 role="img"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 512 512"
@@ -201,13 +200,13 @@ const Footer = () => {
               </svg>
               +2348143019660
             </p>
-            <p class="flex items-center justify-center md:justify-start">
+            <p className="flex items-center justify-center md:justify-start">
               <svg
                 aria-hidden="true"
                 focusable="false"
                 data-prefix="fas"
                 data-icon="print"
-                class="w-4 mr-4"
+                className="w-4 mr-4"
                 role="img"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 512 512"
@@ -222,9 +221,9 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div class="text-center p-6 bg-gray-200">
+      <div className="text-center p-6 bg-gray-200">
         <span>© 2022 Copyright: </span>
-        <Link class="text-gray-600 font-semibold" to="/">
+        <Link className="text-gray-600 font-semibold" to="/">
           Fountain Havens
         </Link>
       </div>
