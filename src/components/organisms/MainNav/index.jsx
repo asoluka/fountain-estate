@@ -97,7 +97,7 @@ export const MainNav = ({ background }) => {
                             <Link
                               key={item.name}
                               to={item.to}
-                              className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50"
+                              className="-m-3 p-2 flex items-start rounded-lg hover:bg-gray-50"
                             >
                               {/* <item.icon
                                 className="flex-shrink-0 h-6 w-6 text-blue-900"

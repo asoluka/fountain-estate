@@ -55,17 +55,17 @@ export const AboutPage = () => {
         </div>
       </div>
 
-      <div>
+      <div className="p-4">
         <div className="max-w-7xl mx-auto mb-20 text-gray-700">
           <div className="grid grid-cols-1 md:grid-cols-7 gap-8">
-            <div className="col-start-2 col-end-4 shadow-2xl">
+            <div className="mb-6 lg:col-start-2 lg:col-end-4 shadow-2xl">
               <img
                 className="h-full"
                 src="../../../assets/imgs/street_view_2.jpg"
                 alt="Construction"
               />
             </div>
-            <div className="col-start-4 col-end-7">
+            <div className="lg:col-start-4 lg:col-end-7">
               <p className="pb-6">
                 At the Fountain Havens great care is placed on the longevity of
                 our construction which we ensure with the use of quality

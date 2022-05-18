@@ -12,37 +12,32 @@ const data = [
   {
     title: "Keep Our Clients Satisfied",
     imgUrl: "./assets/imgs/street_view_2.jpg",
-    description:
-      "lorem ipsum lorem ipsum, placeholder text used here lorem ipsum lorem ipsum, placeholder text used here...",
+    description: "",
     link: "",
   },
   {
     title: "Our Colleagues and Collaborators Happy",
     imgUrl: "./assets/imgs/street_view.jpg",
-    description:
-      "lorem ipsum lorem ipsum, placeholder text used here lorem ipsum lorem ipsum, placeholder text used here...",
+    description: "",
     link: "",
   },
   {
     title: "Our Staffs Fulfilled and Motivated",
     imgUrl: "./assets/imgs/aerial_view.jpg",
-    description:
-      "lorem ipsum lorem ipsum, placeholder text used here lorem ipsum lorem ipsum...",
+    description: "",
     link: "",
   },
   {
     title: "Our Management Proud and Celebrated",
     imgUrl: "./assets/imgs/living_room.jpg",
-    description:
-      "lorem ipsum lorem ipsum, placeholder text used here lorem ipsum lorem ipsum, placeholder...",
+    description: "",
     link: "",
   },
 
   {
     title: "Our Brand Competitive and Progressive",
     imgUrl: "./assets/imgs/bedroom.jpg",
-    description:
-      "lorem ipsum lorem ipsum, placeholder text used here lorem ipsum lorem ipsum, placeholder text used here...",
+    description: "",
     link: "",
   },
 ];
