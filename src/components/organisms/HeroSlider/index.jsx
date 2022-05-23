@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { screen } from "../../../theme";
 import { Flex, Section, Text } from "../../atoms";
 import { ActionButtons, MainNav } from "..";
+import { Link } from "react-router-dom";
 // import { CallButton } from "../CallButton";
 
 const HeroWrapper = styled(Flex)`
@@ -50,6 +51,20 @@ const SliderContent = styled.div`
   }
 `;
 
+const CaptionText = styled(Section)`
+  width: 60%;
+  margin: -40px 0 0 0;
+  line-height: 2rem;
+
+  @media only screen and (${screen.lg}) {
+    width: 70%;
+  }
+
+  @media only screen and (${screen.lg}) {
+    width: 80%;
+  }
+`;
+
 const SliderText = styled(Text)`
   transition: all 1.5s;
 `;
@@ -76,7 +91,7 @@ const SliderButton = styled.button`
 
 export const HeroSlider = ({ data }) => {
   const [currentSlide, setCurrentSlide] = useState(0);
-  const { title, description, imgUrl } = data[currentSlide];
+  const { imgUrl } = data[currentSlide];
 
   useEffect(() => {
     let timerID = setInterval(nextSlide, 10000);
@@ -101,13 +116,21 @@ export const HeroSlider = ({ data }) => {
       <HeroWrapper>
         <SliderContent>
           <MainNav background="transparent" />
-          <Section border="1p solid black" width="80%" margin="-40px 0 0 0">
-            <SliderText type="p">We exist to keep:</SliderText>
-            <p className="mt-2 text-4xl leading-snug md:text-5xl leading-8 font-extrabold tracking-tight sm:text-4xl mb-8">
-              {title}
+          <CaptionText>
+            <SliderText type="p">Commited To:</SliderText>
+            <p className="mt-2 text-4xl md:text-5xl font-extrabold sm:text-4xl mb-8">
+              Offering a change to the luxury living landscape.
             </p>
-            <SliderText type="p">{description}</SliderText>
-          </Section>
+            <div className="inline-flex rounded-md shadow">
+              <Link
+                to="/about"
+                className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-900 hover:bg-blue-700"
+              >
+                Learn More
+              </Link>
+            </div>
+            {/* <SliderText type="p">{description}</SliderText> */}
+          </CaptionText>
           <div></div>
         </SliderContent>
         <SliderImage backgroundImage={imgUrl}>

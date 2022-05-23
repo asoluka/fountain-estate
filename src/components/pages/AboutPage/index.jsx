@@ -131,7 +131,7 @@ export const AboutPage = () => {
         </section>
       </div> */}
 
-      <div className="px-4">
+      {/* <div className="px-4">
         <section className="max-w-7xl mx-auto mb-20 text-gray-700">
           <div className="text-center md:max-w-xl lg:max-w-3xl mx-auto">
             <h2 className="text-base text-blue-900 font-semibold tracking-wide uppercase">
@@ -178,7 +178,7 @@ export const AboutPage = () => {
             })}
           </div>
         </section>
-      </div>
+      </div> */}
     </GeneralTemplate>
   );
 };
