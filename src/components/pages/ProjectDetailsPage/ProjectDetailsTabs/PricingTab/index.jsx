@@ -89,7 +89,7 @@ const PricingTab = () => {
       </div>
       <div className="inline-flex rounded-md shadow">
         <a
-          href="tel: +2348143019660"
+          href="tel: +2347025050012"
           className="inline-flex items-center justify-center px-3 py-2 border border-transparent text-base font-medium rounded-md text-white bg-blue-900 hover:bg-blue-700"
         >
           Contact Us

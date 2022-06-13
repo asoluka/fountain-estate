@@ -120,11 +120,11 @@ export const MainNav = ({ background }) => {
           </Popover.Group>
           <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
             <a
-              href="tel: +2348143019660"
+              href="tel: +2347025050012"
               className="text-base ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium hover:text-white text-white bg-blue-900 hover:bg-blue-700"
             >
               <Icon type="phone" className="w-4 mr-2" fill="white" />{" "}
-              08143019660
+              07025050012
             </a>
           </div>
         </div>

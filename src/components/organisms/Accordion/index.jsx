@@ -9,9 +9,18 @@ function callback(key) {
 export const Accordion = ({ data }) => (
   <Collapse defaultActiveKey={["1"]} onChange={callback}>
     {data.map((elem, idx) => {
+      const { answer, question } = elem;
       return (
-        <Panel header={elem.question} key={idx}>
-          <p>{elem.answer}</p>
+        <Panel header={question} key={idx}>
+          {Array.isArray(answer) ? (
+            <ul>
+              {answer.map((item, key) => (
+                <li key={key}>{item}</li>
+              ))}
+            </ul>
+          ) : (
+            <p>{elem.answer}</p>
+          )}
         </Panel>
       );
     })}

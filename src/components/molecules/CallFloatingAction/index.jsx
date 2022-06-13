@@ -26,7 +26,7 @@ const Wrapper = styled.div`
 const CallFloatingAction = () => {
   return (
     <Wrapper>
-      <a href="tel: +2348143019660">
+      <a href="tel: +2347025050012">
         <Icon type="phone" fill="white" />
       </a>
     </Wrapper>

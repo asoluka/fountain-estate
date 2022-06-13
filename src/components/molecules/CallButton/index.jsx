@@ -44,8 +44,8 @@ export const CallButton = ({
       color={color}
       borderColor={borderColor}
     >
-      <LinkText href="tel:+2347015494454" color={color}>
-        <Text>081 3456 8736</Text>
+      <LinkText href="tel:+2347025050012" color={color}>
+        <Text>07025050012</Text>
       </LinkText>
     </Wrapper>
   );

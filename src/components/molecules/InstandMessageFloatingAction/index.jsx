@@ -26,7 +26,7 @@ const Wrapper = styled.div`
 export const InstantMessageFloatingAction = () => {
   const { width } = useWindowSize();
   const [url, setURL] = useState(
-    "https://web.whatsapp.com/send?phone=2348143019660&text="
+    "https://web.whatsapp.com/send?phone=2347025050012&text="
   );
 
   useEffect(() => {
@@ -36,9 +36,9 @@ export const InstantMessageFloatingAction = () => {
 
   const setWhatsappURL = () => {
     if (width <= parseInt(screen.sm.substring(11, 14))) {
-      setURL("https://api.whatsapp.com/send?phone=2348143019660");
+      setURL("https://api.whatsapp.com/send?phone=2347025050012");
     } else {
-      setURL("https://web.whatsapp.com/send?phone=2348143019660&text=");
+      setURL("https://web.whatsapp.com/send?phone=2347025050012&text=");
     }
   };
 

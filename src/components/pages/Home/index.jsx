@@ -16,16 +16,28 @@ const data = [
     link: "",
   },
   {
+    imgUrl:
+      "https://res.cloudinary.com/sleekcodes/image/upload/v1652667118/integrity_towers/gym_h2nqkz.jpg",
+  },
+  {
     title: "Our Colleagues and Collaborators Happy",
     imgUrl: "./assets/imgs/street_view.jpg",
     description: "",
     link: "",
   },
   {
+    imgUrl:
+      "https://res.cloudinary.com/sleekcodes/image/upload/v1652667117/integrity_towers/perspective_3_owtyan.jpg",
+  },
+  {
     title: "Our Staffs Fulfilled and Motivated",
     imgUrl: "./assets/imgs/aerial_view.jpg",
     description: "",
     link: "",
+  },
+  {
+    imgUrl:
+      "https://res.cloudinary.com/sleekcodes/image/upload/v1652667096/integrity_towers/perspective_7_a42piv.jpg",
   },
   {
     title: "Our Management Proud and Celebrated",
