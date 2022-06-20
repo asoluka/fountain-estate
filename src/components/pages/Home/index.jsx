@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { HeroSlider } from "../../organisms";
+import { HeroSlider, Navbar } from "../../organisms";
 
 const Main = styled.div`
   min-height: 100vh;
@@ -57,6 +57,7 @@ const data = [
 export const Home = () => {
   return (
     <Main>
+      <Navbar />
       <HeroSlider data={data} />
     </Main>
   );

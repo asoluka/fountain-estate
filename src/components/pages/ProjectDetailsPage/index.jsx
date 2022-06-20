@@ -1,11 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import {
   AnnotationIcon,
   GlobeAltIcon,
   LightningBoltIcon,
   ScaleIcon,
 } from "@heroicons/react/outline";
-import { MainNav, ProjectGallery, Tab } from "../../organisms";
+import { Navbar, ProjectGallery, Tab } from "../../organisms";
 import { GeneralTemplate } from "../../templates";
 import { screen } from "../../../theme";
 import styled from "styled-components";
@@ -38,6 +38,7 @@ const PaddedContainer = styled.div`
 
 const projects = [
   {
+    id: "0162736862abkue",
     name: "Integrity Towers",
     description: `To create a contemporary landmark, you must reimagine, redefine and
     reenvision the basic tenents of Metropolitan Luxury. <br />
@@ -217,6 +218,7 @@ const projects = [
     ],
   },
   {
+    id: "016273sabkue09276",
     name: "Jasmine Villa",
     description: `Tucked away in the heart of Ikoyi, lagos. Jasmine Villa is located in a quiet residential
     neighborhood set for an extravagant lifestyle, with comfortable homes and the best
@@ -256,25 +258,26 @@ const projects = [
     ],
     faqData: [
       {
-        question: "Where is the Integrity Towers located",
+        question: "WHERE IS JASMINE VILLA LOCATED",
         answer:
-          "The Integrity Tower is located in the unique and serene area of Lekki Phase 1, off Bisola Durosimi Etti road",
+          "Jasmine Villa is located in the unique and serene area of Mcdonald’s road, Ikoyi.",
       },
       {
-        question: "Who is the Developer of the Integrity Towers",
+        question: "Who is the Developer of the Jasmine Villa",
         answer:
-          "Fountain Havens Nig Limited; a leading player in the Nigerian real estate sector is the developer of The Integrity Tower.",
+          "Fountain Havens Nig Limited; a leading player in the Nigerian real estate sector is the developer of The Jasmine Villa.",
       },
       {
-        question: "What Title does the Integrity Towers have?",
-        answer: "Governor’s consent",
+        question: "What Title does the Jasmine Villa have?",
+        answer: "Lagos State Certificate of Occupancy",
       },
       {
-        question: "What form of Apartments are at the Integrity Towers?",
-        answer: " Four bedroom and a bq maisonette apartment",
+        question: "What form of Apartments are at the Jasmine Villa?",
+        answer:
+          "FIVE BEDROOM DETACHED DUPLEX with two maid quarters, Four Bedroom Semi Detached Duplex with Two Maids Quarter",
       },
       {
-        question: "What are the facilities available at the Integrity Towers?",
+        question: "What are the facilities available at the Jasmine Villa?",
         answer: [
           "CCTV & PABX",
           "24/7 Security",
@@ -283,6 +286,7 @@ const projects = [
           "Terrace spaces",
           "Smart home technology",
           "Gym",
+          "In built cinema system",
           "Elevator",
           "swimming pool",
           "High speed internet access",
@@ -321,85 +325,115 @@ const projects = [
         question:
           "What are the notable landmarks surrounding the Integrity Tower",
         answer: [
-          "IMAX Cinema",
-          "Evercare Hospital",
-          "Lekki Coliseum",
-          "Lekki British School",
-          "Rock Montessori School",
-          "Blu Atlantic Hotel",
+          "Ikoyi Baptist Church",
+          "4 Bourdillon",
+          "Our Saviors School",
+          "Corona Primary School, Ikoyi",
         ],
       },
     ],
     galleryData: [
       {
         image:
-          "https://res.cloudinary.com/sleekcodes/image/upload/v1652667118/integrity_towers/gym_h2nqkz.jpg",
-        caption: "GYM",
+          "https://res.cloudinary.com/sleekcodes/image/upload/v1655691166/Jasmine%20Villa/DETACHED_-_THIRD_FLOOR_s43kpi.jpg",
+        caption: "Detached - Third Floor",
       },
       {
         image:
-          "https://res.cloudinary.com/sleekcodes/image/upload/v1652667117/integrity_towers/masters_bath_wuq2zu.jpg",
-        caption: "Masters Bath",
+          "https://res.cloudinary.com/sleekcodes/image/upload/v1655691164/Jasmine%20Villa/AERIAL_3_x65etb.jpg",
+        caption: "Aerial",
       },
       {
         image:
-          "https://res.cloudinary.com/sleekcodes/image/upload/v1652667117/integrity_towers/perspective_3_owtyan.jpg",
-        caption: "Perspective 3",
+          "https://res.cloudinary.com/sleekcodes/image/upload/v1655691150/Jasmine%20Villa/4_Family_Lounge_t5fjtj.jpg",
+        caption: "Family Lounge 3",
       },
       {
         image:
-          "https://res.cloudinary.com/sleekcodes/image/upload/v1652667115/integrity_towers/pool_2_vlclxx.jpg",
-        caption: "Pool 2",
+          "https://res.cloudinary.com/sleekcodes/image/upload/v1655691143/Jasmine%20Villa/SEMI_DETACHED_-_GROUND_FLOOR_AXO_ft3jld.jpg",
+        caption: "SEMI_DETACHED_-_GROUND_FLOOR_AXO",
       },
       {
         image:
-          "https://res.cloudinary.com/sleekcodes/image/upload/v1652667113/integrity_towers/perspective_1_iisqp6.jpg",
-        caption: "Perspective 1",
+          "https://res.cloudinary.com/sleekcodes/image/upload/v1655691137/Jasmine%20Villa/1_Living_hbrolj.jpg",
+        caption: "Living",
       },
       {
         image:
-          "https://res.cloudinary.com/sleekcodes/image/upload/v1652667099/integrity_towers/perspective_5_hi4ndi.jpg",
-        caption: "Perspective 5",
+          "https://res.cloudinary.com/sleekcodes/image/upload/v1655691125/Jasmine%20Villa/Terrace_mqgvoc.jpg",
+        caption: "Terrace",
       },
       {
         image:
-          "https://res.cloudinary.com/sleekcodes/image/upload/v1652667096/integrity_towers/perspective_4_sgxccg.jpg",
-        caption: "Perspective 4",
+          "https://res.cloudinary.com/sleekcodes/image/upload/v1655691123/Jasmine%20Villa/5_Bedroom_ityjsg.jpg",
+        caption: "Bedroom",
       },
       {
         image:
-          "https://res.cloudinary.com/sleekcodes/image/upload/v1652667096/integrity_towers/perspective_7_a42piv.jpg",
-        caption: "Perspective 7",
+          "https://res.cloudinary.com/sleekcodes/image/upload/v1655691123/Jasmine%20Villa/2_Living_d8z60l.jpg",
+        caption: "Living",
       },
       {
         image:
-          "https://res.cloudinary.com/sleekcodes/image/upload/v1652667094/integrity_towers/lobby_rgwg61.jpg",
-        caption: "Lobby",
+          "https://res.cloudinary.com/sleekcodes/image/upload/v1655691101/Jasmine%20Villa/SEMI-DETACHED_1_niapir.jpg",
+        caption: "Semi-detached",
       },
       {
         image:
-          "https://res.cloudinary.com/sleekcodes/image/upload/v1652667094/integrity_towers/fence_oowzhx.jpg",
-        caption: "Fence",
+          "https://res.cloudinary.com/sleekcodes/image/upload/v1655691094/Jasmine%20Villa/DETACHED_1_da9veq.jpg",
+        caption: "Detached",
       },
       {
         image:
-          "https://res.cloudinary.com/sleekcodes/image/upload/v1652667089/integrity_towers/perspective_2_dzablf.jpg",
-        caption: "Perspective 2",
+          "https://res.cloudinary.com/sleekcodes/image/upload/v1655690979/Jasmine%20Villa/SEMI-DETACHED_UNIT_lmayrc.jpg",
+        caption: "Semi-detached Unit",
+      },
+      {
+        image:
+          "https://res.cloudinary.com/sleekcodes/image/upload/v1655690966/Jasmine%20Villa/DETACHED_UNIT_t7hpai.jpg",
+        caption: "detached Unit",
+      },
+      {
+        image:
+          "https://res.cloudinary.com/sleekcodes/image/upload/v1655690961/Jasmine%20Villa/12_Cinema_qqzzgf.jpg",
+        caption: "Cinema",
+      },
+      {
+        image:
+          "https://res.cloudinary.com/sleekcodes/image/upload/v1655690959/Jasmine%20Villa/11_Gym_hgmyib.jpg",
+        caption: "Gym",
+      },
+      {
+        image:
+          "https://res.cloudinary.com/sleekcodes/image/upload/v1655690952/Jasmine%20Villa/3_Kitchen_yc5vnb.jpg",
+        caption: "Kitched",
+      },
+      {
+        image:
+          "https://res.cloudinary.com/sleekcodes/image/upload/v1655690947/Jasmine%20Villa/STREET_VIEW_1_mi1ucs.jpg",
+        caption: "Street View 1",
+      },
+      {
+        image:
+          "https://res.cloudinary.com/sleekcodes/image/upload/v1655690947/Jasmine%20Villa/STREET_VIEW_2_zvmv03.jpg",
+        caption: "Street View 2",
       },
     ],
     neighbourhood: [
-      "Heart of Ikoyi",
-      "Sport Center",
-      "Upscale Restaurant",
-      "Church",
-      "School",
+      "Ikoyi Baptist Church",
+      "4 Bourdillon",
+      "Our Saviors School",
+      "Corona Primary School, Ikoyi",
     ],
   },
 ];
 
 export const ProjectDetailsPage = () => {
-  const { projectName } = useParams();
-  const [project, setProject] = useState(projects[0]);
+  const { id } = useParams();
+  const getProjectByID = () => {
+    return projects.find((project) => project.id === id);
+  };
+  const project = getProjectByID();
   const {
     name,
     description,
@@ -410,13 +444,11 @@ export const ProjectDetailsPage = () => {
     neighbourhood,
   } = project;
 
-  console.log(projectName);
-
   return (
     <GeneralTemplate
       header={
         <PaddedContainer>
-          <MainNav padding="20px 0" showCallButton={true} />
+          <Navbar />
         </PaddedContainer>
       }
       footer={<Footer />}

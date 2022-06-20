@@ -2,12 +2,12 @@ import { useEffect, useState } from "react";
 import styled from "styled-components";
 import { screen } from "../../../theme";
 import { Flex, Section, Text } from "../../atoms";
-import { ActionButtons, MainNav } from "..";
+import { ActionButtons } from "..";
 import { Link } from "react-router-dom";
 // import { CallButton } from "../CallButton";
 
 const HeroWrapper = styled(Flex)`
-  min-height: 100vh;
+  min-height: 92.2vh;
 
   @media only screen and (${screen.lg}) {
     flex-direction: column;
@@ -31,8 +31,7 @@ const SliderImage = styled.div`
 
 const SliderContent = styled.div`
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  align-items: center;
   padding: 20px 50px;
   width: 55%;
 
@@ -53,7 +52,7 @@ const SliderContent = styled.div`
 
 const CaptionText = styled(Section)`
   width: 60%;
-  margin: -40px 0 0 0;
+  margin: -80px 0 0 0;
   line-height: 2rem;
 
   @media only screen and (${screen.lg}) {
@@ -115,7 +114,7 @@ export const HeroSlider = ({ data }) => {
     <div>
       <HeroWrapper>
         <SliderContent>
-          <MainNav background="transparent" />
+          {/* <MainNav background="transparent" /> */}
           <CaptionText>
             <SliderText type="p">Commited To:</SliderText>
             <p className="mt-2 text-4xl md:text-5xl font-extrabold sm:text-4xl mb-8">
@@ -131,7 +130,6 @@ export const HeroSlider = ({ data }) => {
             </div>
             {/* <SliderText type="p">{description}</SliderText> */}
           </CaptionText>
-          <div></div>
         </SliderContent>
         <SliderImage backgroundImage={imgUrl}>
           {/* <CallButton position="absolute" top="35px" right="20px" /> */}

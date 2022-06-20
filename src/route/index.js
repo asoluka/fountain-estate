@@ -14,7 +14,7 @@ const AppRoutes = () => {
           path="/schedule-inspection"
           element={<ScheduleInspectionPage />}
         />
-        <Route path="projects/:name" element={<ProjectDetailsPage />}>
+        <Route path="projects/:id" element={<ProjectDetailsPage />}>
           {/* <Route element={<AnalyticsTabs />} path=":tab" /> */}
         </Route>
         <Route exact path="*" element={<NotFound />} />

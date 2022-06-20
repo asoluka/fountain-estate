@@ -2,7 +2,7 @@ import React, { useState, useRef } from "react";
 import styled from "styled-components";
 import emailjs from "@emailjs/browser";
 import { screen } from "../../../theme";
-import { MainNav } from "../../organisms";
+import { Navbar } from "../../organisms";
 import Footer from "../../organisms/Footer";
 import { GeneralTemplate } from "../../templates";
 
@@ -44,7 +44,7 @@ const ScheduleInspectionPage = () => {
     <GeneralTemplate
       header={
         <PaddedContainer>
-          <MainNav padding="20px 0" showCallButton={true} />
+          <Navbar />
         </PaddedContainer>
       }
       footer={<Footer />}

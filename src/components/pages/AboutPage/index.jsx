@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { GeneralTemplate } from "../../templates";
 import { screen } from "../../../theme";
-import { MainNav } from "../../organisms";
+import { Navbar } from "../../organisms";
 import Footer from "../../organisms/Footer";
 import heroBackground from "../../../assets/imgs/aerial_view.jpg";
 
@@ -27,7 +27,7 @@ export const AboutPage = () => {
     <GeneralTemplate
       header={
         <PaddedContainer>
-          <MainNav padding="20px 0" showCallButton={true} />
+          <Navbar />
         </PaddedContainer>
       }
       footer={<Footer />}
