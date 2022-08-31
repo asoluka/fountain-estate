@@ -17,6 +17,7 @@ import Map from "../../organisms/Map";
 import { Link, useParams } from "react-router-dom";
 import Footer from "../../organisms/Footer";
 import FeaturesTab from "./ProjectDetailsTabs/FeaturesTab";
+import { CalendlyButton } from "../../molecules/CalendlyButton";
 
 const Wrapper = styled.div``;
 
@@ -538,12 +539,17 @@ export const ProjectDetailsPage = () => {
             </h2>
             <div className="mt-8 flex lg:mt-0 lg:flex-shrink-0">
               <div className="inline-flex rounded-md shadow">
-                <a
+                {/* <a
                   href="tel: +2347025050012"
                   className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-900 hover:bg-blue-700"
                 >
                   Instant Call
-                </a>
+                </a> */}
+                <CalendlyButton
+                  text="Schedule a Call"
+                  className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-900 hover:bg-blue-700"
+                  url="https://calendly.com/realruona/15min"
+                />
               </div>
               <div className="ml-3 inline-flex rounded-md shadow">
                 <Link
