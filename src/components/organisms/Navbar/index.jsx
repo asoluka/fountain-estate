@@ -156,11 +156,14 @@ export const Navbar = () => {
     <Container width="95%">
       <Wrapper>
         <NavIconsArea>
-          <Logo
-            alt="checkin-logo"
-            // className="w-8 xl:w-10 object-contain"
-            src={logo}
-          />
+          <StyledNavLink to="/" onClick={() => goto("/")}>
+            <Logo
+              alt="checkin-logo"
+              // className="w-8 xl:w-10 object-contain"
+              src={logo}
+            />
+          </StyledNavLink>
+
           <div onClick={() => setMobileMenuVisible(!mobileMenuVisible)}>
             <HamburgerIcon color={colors?.THEME} size={30} />
           </div>
