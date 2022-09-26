@@ -474,6 +474,40 @@ export const ProjectDetailsPage = () => {
             type="video/mp4"
           />
         </video> */}
+        <div className="bg-gray-50">
+          <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between">
+            <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+              <span className="block">Ready to invest?</span>
+              <span className="block text-blue-900">
+                Contact Us or Schedule an Inspection.
+              </span>
+            </h2>
+            <div className="mt-8 flex lg:mt-0 lg:flex-shrink-0">
+              <div className="inline-flex rounded-md shadow">
+                {/* <a
+                  href="tel: +2347025050012"
+                  className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-900 hover:bg-blue-700"
+                >
+                  Instant Call
+                </a> */}
+                <CalendlyButton
+                  text="Schedule a Call"
+                  className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-900 hover:bg-blue-700"
+                  url="https://calendly.com/realruona/15min"
+                />
+              </div>
+              <div className="ml-3 inline-flex rounded-md shadow">
+                <Link
+                  to="/schedule-inspection"
+                  className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-blue-900 bg-white hover:bg-blue-50"
+                >
+                  Schedule Inspection
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div className="py-12 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center">
@@ -509,57 +543,20 @@ export const ProjectDetailsPage = () => {
                       neighbourhood={neighbourhood}
                     />
                   ),
-                  link: "#project-description",
                 },
                 {
                   title: "Features",
                   content: <FeaturesTab data={features} />,
-                  link: "#features",
                 },
-                { title: "Pricing", content: <PricingTab />, link: "#pricing" },
-                { title: "Location", content: <Map />, link: "#location" },
+                { title: "Pricing", content: <PricingTab /> },
+                { title: "Location", content: <Map /> },
 
                 {
                   title: "FAQ",
                   content: <FaqTab data={faqData} />,
-                  link: "#faq",
                 },
               ]}
             />
-          </div>
-        </div>
-
-        <div className="bg-gray-50">
-          <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between">
-            <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-              <span className="block">Ready to invest?</span>
-              <span className="block text-blue-900">
-                Contact Us or Schedule an Inspection.
-              </span>
-            </h2>
-            <div className="mt-8 flex lg:mt-0 lg:flex-shrink-0">
-              <div className="inline-flex rounded-md shadow">
-                {/* <a
-                  href="tel: +2347025050012"
-                  className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-900 hover:bg-blue-700"
-                >
-                  Instant Call
-                </a> */}
-                <CalendlyButton
-                  text="Schedule a Call"
-                  className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-900 hover:bg-blue-700"
-                  url="https://calendly.com/realruona/15min"
-                />
-              </div>
-              <div className="ml-3 inline-flex rounded-md shadow">
-                <Link
-                  to="/schedule-inspection"
-                  className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-blue-900 bg-white hover:bg-blue-50"
-                >
-                  Schedule Inspection
-                </Link>
-              </div>
-            </div>
           </div>
         </div>
       </Wrapper>
